@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="BVViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yq2-4W-Fle"/>
+                        <viewControllerLayoutGuide type="bottom" id="WiA-zz-euI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0y-WX-zVK">
+                                <rect key="frame" x="92" y="91" width="136" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="NotificationCenter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNotificationCenterTest:" destination="2" eventType="touchUpInside" id="77v-id-BdA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiL-0l-XUt">
+                                <rect key="frame" x="92" y="150" width="136" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="KVO">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnKVOObservationTest:" destination="2" eventType="touchUpInside" id="YQE-yL-j2a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o80-eX-mj5">
+                                <rect key="frame" x="92" y="212" width="136" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="标准Observer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStandardObservationTest:" destination="2" eventType="touchUpInside" id="Qjy-6e-Hzj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o80-eX-mj5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="212" id="9wz-Oe-jyB"/>
+                            <constraint firstItem="H0y-WX-zVK" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="B8W-iU-pi9"/>
+                            <constraint firstItem="AiL-0l-XUt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="150" id="JVB-co-Ssl"/>
+                            <constraint firstItem="AiL-0l-XUt" firstAttribute="leading" secondItem="H0y-WX-zVK" secondAttribute="leading" id="Lk9-dl-DcU"/>
+                            <constraint firstItem="AiL-0l-XUt" firstAttribute="trailing" secondItem="o80-eX-mj5" secondAttribute="trailing" id="WY2-l3-FCm"/>
+                            <constraint firstItem="H0y-WX-zVK" firstAttribute="trailing" secondItem="AiL-0l-XUt" secondAttribute="trailing" id="cs7-ga-Nnq"/>
+                            <constraint firstItem="H0y-WX-zVK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="91" id="vHL-Ot-cyc"/>
+                            <constraint firstItem="o80-eX-mj5" firstAttribute="leading" secondItem="AiL-0l-XUt" secondAttribute="leading" id="vKb-re-VWS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
